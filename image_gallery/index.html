@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="gallery-container">
+    <h1>Image Gallery</h1> 
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('city')">City</button>
+      <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <!-- Nature -->
+      <img src="https://picsum.photos/id/1018/600/400" data-category="nature" alt="Nature">
+      <img src="https://picsum.photos/id/1042/600/400" data-category="nature" alt="Nature">
+      <img src="https://picsum.photos/id/1069/600/400" data-category="nature" alt="Nature">
+      <img src="https://picsum.photos/id/1084/600/400" data-category="nature" alt="Nature">
+
+      <!-- City -->
+      <img src="https://picsum.photos/id/1031/600/400" data-category="city" alt="City">
+      <img src="https://picsum.photos/id/1074/600/400" data-category="city" alt="City">
+      <img src="https://picsum.photos/id/1011/600/400" data-category="city" alt="City">
+      <img src="https://picsum.photos/id/1015/600/400" data-category="city" alt="City">
+
+      <!-- Animals -->
+      <img src="https://picsum.photos/id/1025/600/400" data-category="animals" alt="Animals">
+      <img src="https://picsum.photos/id/1062/600/400" data-category="animals" alt="Animals">
+      <img src="https://picsum.photos/id/237/600/400" data-category="animals" alt="Animals">
+      <img src="https://picsum.photos/id/433/600/400" data-category="animals" alt="Animals">
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+    <div class="controls">
+      <button onclick="prevImage()">⟨ Prev</button>
+      <button onclick="nextImage()">Next ⟩</button>
+      <button onclick="closeLightbox()">✖ Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
